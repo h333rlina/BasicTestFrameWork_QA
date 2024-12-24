@@ -1,0 +1,16 @@
+plugins {
+    id 'java'  // Plugin untuk proyek Java
+}
+
+repositories {
+    mavenCentral()  // Repositori untuk mengunduh dependensi
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'  // JUnit Jupiter API
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'  // Engine untuk menjalankan tes
+}
+
+test {
+    useJUnitPlatform()  // Menggunakan JUnit Platform untuk menjalankan tes dengan JUnit 5
+}
